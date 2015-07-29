@@ -79,10 +79,10 @@ public class MainActivity extends AppCompatActivity
 			it.putExtra("param", "ABC");
 			startActivityForResult(it, 0);*/
             //Uri  uri = Uri.parse("http://www.it-college.ac.jp");
-			//Uri  uri = Uri.parse("geo:0.0?q=Naha");
-            Uri uri = Uri.parse("tel:117");
-			//Intent it = new Intent(Intent.ACTION_VIEW, uri);
-			Intent it = new Intent(Intent.ACTION_DIAL, uri);
+			Uri  uri = Uri.parse("geo:0.0?q=Naha");
+            //Uri uri = Uri.parse("tel:117");
+			Intent it = new Intent(Intent.ACTION_VIEW, uri);
+			//Intent it = new Intent(Intent.ACTION_DIAL, uri);
             //Intent it = new Intent(Settings.ACTION_SETTINGS);
             startActivity(it);
 
